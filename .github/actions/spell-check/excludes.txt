@@ -1,0 +1,5 @@
+^images/
+^thirdpartynotices\.txt$
+^\.github/actions/spell-check/
+(?:^|/)go\.(mod|sub)$
+(?:^|/)package(?:-lock|)\.json$
