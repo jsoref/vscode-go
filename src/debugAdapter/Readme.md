@@ -21,7 +21,7 @@ This is the option you would take if you want to understand or change the way th
 This lets you debug the code in the `goDebug.ts` file which powers the debug adapter which runs in a different Nodejs process than the rest of the extension.
 Therefore, you won't be able to debug the code powering the rest of the extension. 
 
-1. Open the `vscode-go` folder in VS Code. Choose the `Launch as server` debug configuration from the drop down in the debug viewlet. Add a breakpoint in the desired localtion in the `vscode-go/src/debugAdapter/goDebug.ts` file
+1. Open the `vscode-go` folder in VS Code. Choose the `Launch as server` debug configuration from the drop down in the debug viewlet. Add a breakpoint in the desired location in the `vscode-go/src/debugAdapter/goDebug.ts` file
 2. Open the Go application that you want to debug in another instance of VS Code. Create a debug configuration if it doesn't exist. In this configuration add `"debugServer": 4711` in the root of the configuration. Start debugging your Go application and the breakpoint in the `goDebug.ts` file in the other VS Code instance will be hit.
 
 ## Debugging the Go Debug Adapter as well as the rest of the extension
@@ -40,8 +40,8 @@ In some edge cases (like veryfing workbench behavior and state before executing 
 
 1. Follow the [preliminary steps to build vscode-go](#preliminary-steps)
 2. Sideload the your local vscode-go extension to the locally run Visual Studio Code. This is done by copying the contents of the vscode-go folder into `$HOME/.vscode-oss-dev/extensions/ms-vscode.go` (the location may vary by OS)
-3. Open the `vscode` folder in Visual Studio Code. Launch the VS Code debug instance (OSS - Code) by choosing the `Launch VS Code` debug configuration from the drop down in the debug viewlet. Add a breakpoint in the desired localtion.
-4. In another instance of Visual Studio Code, open the `vscode-go` folder. Choose the `Launch as server` debug configuration from the drop down in the debug viewlet. Add a breakpoint in the desired localtion in the `vscode-go/src/debugAdapter/goDebug.ts` file
+3. Open the `vscode` folder in Visual Studio Code. Launch the VS Code debug instance (OSS - Code) by choosing the `Launch VS Code` debug configuration from the drop down in the debug viewlet. Add a breakpoint in the desired location.
+4. In another instance of Visual Studio Code, open the `vscode-go` folder. Choose the `Launch as server` debug configuration from the drop down in the debug viewlet. Add a breakpoint in the desired location in the `vscode-go/src/debugAdapter/goDebug.ts` file
 5. Open the Go application that you want to debug in the OSS Code instance initiated in step 3. Create a debug configuration if it doesn't exist. In this configuration add `"debugServer": 4711` in the root of the configuration. Start debugging your Go application and the breakpoint in the `goDebug.ts` file in the other VS Code instance will be hit, along with the breakpoints set up in the vscode files
 
 
