@@ -36,7 +36,7 @@ This setup involves three instances of Visual Studio Code:
 
 ## Debugging the Debug Adapter as well as Visual Studio Code
 
-In some edge cases (like veryfing workbench behavior and state before executing debug adapter apicalls) debugging VS Code itself can be helpful. Once you ensure that you can [build and run Visual Studio Code](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run) from source successfully, follow the below steps:
+In some edge cases (like verifying workbench behavior and state before executing debug adapter apicalls) debugging VS Code itself can be helpful. Once you ensure that you can [build and run Visual Studio Code](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run) from source successfully, follow the below steps:
 
 1. Follow the [preliminary steps to build vscode-go](#preliminary-steps)
 2. Sideload the your local vscode-go extension to the locally run Visual Studio Code. This is done by copying the contents of the vscode-go folder into `$HOME/.vscode-oss-dev/extensions/ms-vscode.go` (the location may vary by OS)
