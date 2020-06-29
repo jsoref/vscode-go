@@ -45,7 +45,7 @@ interface GoDefinitionInput {
 	cwd: string;
 }
 
-interface GoGetDocOuput {
+interface GoGetDocOutput {
 	name: string;
 	import: string;
 	decl: string;
@@ -53,7 +53,7 @@ interface GoGetDocOuput {
 	pos: string;
 }
 
-interface GuruDefinitionOuput {
+interface GuruDefinitionOutput {
 	objpos: string;
 	desc: string;
 }
@@ -259,7 +259,7 @@ function definitionLocation_gogetdoc(
 					}
 					return reject(err.message || stderr);
 				}
-				const goGetDocOutput = <GoGetDocOuput>JSON.parse(stdout.toString());
+				const goGetDocOutput = <GoGetDocOutput>JSON.parse(stdout.toString());
 				const match = /(.*):(\d+):(\d+)/.exec(goGetDocOutput.pos);
 				const definitionInfo: GoDefinitionInformation = {
 					file: null,
@@ -315,7 +315,7 @@ function definitionLocation_guru(
 					if (err) {
 						return reject(err.message || stderr);
 					}
-					const guruOutput = <GuruDefinitionOuput>JSON.parse(stdout.toString());
+					const guruOutput = <GuruDefinitionOutput>JSON.parse(stdout.toString());
 					const match = /(.*):(\d+):(\d+)/.exec(guruOutput.objpos);
 					const definitionInfo: GoDefinitionInformation = {
 						file: null,
