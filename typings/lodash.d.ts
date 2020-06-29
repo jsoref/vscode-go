@@ -7798,7 +7798,7 @@ declare module _ {
             ...iteratees: (ListIterator<T, any>|string|Object)[]): T[];
 
         /**
-         * Sorts by all the given arguments, using either ListIterator, pluckValue, or whereValue foramts
+         * Sorts by all the given arguments, using either ListIterator, pluckValue, or whereValue formats
          * @param args The rules by which to sort
          */
         sortByAll<T>(
@@ -7809,7 +7809,7 @@ declare module _ {
 
     interface LoDashImplicitArrayWrapper<T> {
         /**
-         * Sorts by all the given arguments, using either ListIterator, pluckValue, or whereValue foramts
+         * Sorts by all the given arguments, using either ListIterator, pluckValue, or whereValue formats
          * @param args The rules by which to sort
          */
         sortByAll(...args: (ListIterator<T, boolean>|Object|string)[]): LoDashImplicitArrayWrapper<T>;
