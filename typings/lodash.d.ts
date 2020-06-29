@@ -2849,7 +2849,7 @@ declare module _ {
         * If an object is provided for callback the created "_.where" style callback will return
         * true for elements that have the properties of the given object, else false.
         * @param array Array to remove duplicates from.
-        * @param isSorted True if `array` is already sorted, optiona, default = false.
+        * @param isSorted True if `array` is already sorted, optional, default = false.
         * @param iterator Transform the elements of `array` before comparisons for uniqueness.
         * @param context 'this' object in `iterator`, optional.
         * @return Copy of `array` where all elements are unique.
