@@ -1243,7 +1243,7 @@ encountered.
 		const testCases: [vscode.Position, string[]][] = [
 			[new vscode.Position(6, 4), ['Language']],
 			[new vscode.Position(9, 4), ['GreetingText']],
-			// checking for comment completions with begining of comment without space
+			// checking for comment completions with beginning of comment without space
 			[new vscode.Position(12, 2), []],
 			// cursor between /$/ this should not trigger any completion
 			[new vscode.Position(12, 1), []],
