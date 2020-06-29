@@ -1399,7 +1399,7 @@ encountered.
 			(diagnostics) => {
 				assert.equal(1, diagnostics.length, 'check with buildtag failed. Unexpected errors found');
 				assert.equal(1, diagnostics[0].errors.length, 'check with buildtag failed. Unexpected errors found');
-				assert.equal(diagnostics[0].errors[0].msg, 'undefined: fmt.Prinln');
+				assert.equal(diagnostics[0].errors[0].msg, 'undefined: fmt.Println_');
 			}
 		);
 
@@ -1420,7 +1420,7 @@ encountered.
 				diagnostics[0].errors.length,
 				'check with multiple buildtags failed. Unexpected errors found'
 			);
-			assert.equal(diagnostics[0].errors[0].msg, 'undefined: fmt.Prinln');
+			assert.equal(diagnostics[0].errors[0].msg, 'undefined: fmt.Println_');
 		});
 
 		const config3 = Object.create(vscode.workspace.getConfiguration('go'), {
