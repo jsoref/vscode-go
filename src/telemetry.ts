@@ -170,13 +170,13 @@ export function sendTelemetryEventForGoVersion(goVersion: string) {
 }
 
 export function disposeTelemetryReporter(): Promise<any> {
-	if (telemtryReporter) {
-		return telemtryReporter.dispose();
+	if (telemetryReporter) {
+		return telemetryReporter.dispose();
 	}
 	return Promise.resolve(null);
 }
 
-let telemtryReporter: TelemetryReporter;
+let telemetryReporter: TelemetryReporter;
 
 function sendTelemetryEvent(
 	eventName: string,
@@ -186,8 +186,8 @@ function sendTelemetryEvent(
 	if (!aiKey) {
 		return;  // cannot enable telemetry
 	}
-	telemtryReporter = telemtryReporter
-		? telemtryReporter
+	telemetryReporter = telemetryReporter
+		? telemetryReporter
 		: new TelemetryReporter(extensionId, extensionVersion, aiKey);
-	telemtryReporter.sendTelemetryEvent(eventName, properties, measures);
+	telemetryReporter.sendTelemetryEvent(eventName, properties, measures);
 }
