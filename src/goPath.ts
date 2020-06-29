@@ -119,7 +119,7 @@ export function clearCacheForTools() {
 }
 
 /**
- * Exapnds ~ to homedir in non-Windows platform
+ * Expands ~ to homedir in non-Windows platform
  */
 export function resolveHomeDir(inputPath: string): string {
 	if (!inputPath || !inputPath.trim()) {
