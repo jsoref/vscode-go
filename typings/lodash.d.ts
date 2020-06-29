@@ -3582,7 +3582,7 @@ declare module _ {
          *
          * @param value The value to provide to interceptor.
          * @param interceptor The function to invoke.
-         * @parem thisArg The this binding of interceptor.
+         * @param thisArg The this binding of interceptor.
          * @return Returns value.
          **/
         tap<T>(
