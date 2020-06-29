@@ -4,7 +4,7 @@ usage() {
 Usage: $0 [subcommand]
 Available subcommands:
   help      - display this help message.
-  test      - build and test locally. Some tests may fail if vscode is alreay in use.
+  test      - build and test locally. Some tests may fail if vscode is already in use.
   testlocal - build and test in a locally built container.
   ci        - build and test with headless vscode. Requires Xvfb.
 EOUSAGE
