@@ -108,7 +108,7 @@ export function getTestEnvVars(config: vscode.WorkspaceConfiguration): any {
 
 export function getTestFlags(goConfig: vscode.WorkspaceConfiguration, args?: any): string[] {
 	let testFlags: string[] = goConfig['testFlags'] || goConfig['buildFlags'] || [];
-	testFlags = testFlags.map((x) => resolvePath(x)); // Use copy of the flags, dont pass the actual object from config
+	testFlags = testFlags.map((x) => resolvePath(x)); // Use copy of the flags, don't pass the actual object from config
 	return args && args.hasOwnProperty('flags') && Array.isArray(args['flags']) ? args['flags'] : testFlags;
 }
 
@@ -279,7 +279,7 @@ export async function goTest(testconfig: TestConfig): Promise<boolean> {
 				pkgMapPromise = getGoVersion().then((goVersion) => {
 					if (goVersion.gt('1.8')) {
 						targets = ['./...'];
-						return null; // We dont need mapping, as we can derive the absolute paths from package path
+						return null; // We don't need mapping, as we can derive the absolute paths from package path
 					}
 					return getNonVendorPackages(testconfig.dir).then((pkgMap) => {
 						targets = Array.from(pkgMap.keys());

@@ -1000,7 +1000,7 @@ export function runGodoc(
 				}
 
 				// Recent versions of Go have started to include the package statement
-				// tht we dont need.
+				// tht we don't need.
 				if (godocLines[0].startsWith('package ')) {
 					godocLines.splice(0, 1);
 					if (!godocLines[0].trim()) {

@@ -348,7 +348,7 @@ function definitionLocation_guru(
 export function parseMissingError(err: any): [boolean, string] {
 	if (err) {
 		// Prompt for missing tool is located here so that the
-		// prompts dont show up on hover or signature help
+		// prompts don't show up on hover or signature help
 		if (typeof err === 'string' && err.startsWith(missingToolMsg)) {
 			return [true, err.substr(missingToolMsg.length)];
 		}

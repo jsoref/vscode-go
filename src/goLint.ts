@@ -87,7 +87,7 @@ export function goLint(
 	const args: string[] = [];
 
 	lintFlags.forEach((flag) => {
-		// --json is not a valid flag for golint and in gometalinter, it is used to print output in json which we dont want
+		// --json is not a valid flag for golint and in gometalinter, it is used to print output in json which we don't want
 		if (flag === '--json') {
 			return;
 		}

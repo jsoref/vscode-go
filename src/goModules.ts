@@ -50,7 +50,7 @@ export async function getModFolderPath(fileuri: vscode.Uri): Promise<string> {
 	}
 
 	// We never would be using the path under module cache for anything
-	// So, dont bother finding where exactly is the go.mod file
+	// So, don't bother finding where exactly is the go.mod file
 	const moduleCache = getModuleCache();
 	if (fixDriveCasingInWindows(fileuri.fsPath).startsWith(moduleCache)) {
 		return moduleCache;
