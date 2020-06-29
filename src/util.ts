@@ -795,7 +795,7 @@ export function handleDiagnosticErrors(
 		const fileUri = vscode.Uri.parse(file);
 
 		if (diagnosticCollection === buildDiagnosticCollection) {
-			// If there are lint/vet warnings on current file, remove the ones co-inciding with the new build errors
+			// If there are lint/vet warnings on current file, remove the ones coinciding with the new build errors
 			if (lintDiagnosticCollection.has(fileUri)) {
 				lintDiagnosticCollection.set(
 					fileUri,
@@ -810,7 +810,7 @@ export function handleDiagnosticErrors(
 				);
 			}
 		} else if (buildDiagnosticCollection.has(fileUri)) {
-			// If there are build errors on current file, ignore the new lint/vet warnings co-inciding with them
+			// If there are build errors on current file, ignore the new lint/vet warnings coinciding with them
 			newDiagnostics = deDupeDiagnostics(buildDiagnosticCollection.get(fileUri).slice(), newDiagnostics);
 		}
 		diagnosticCollection.set(fileUri, newDiagnostics);
