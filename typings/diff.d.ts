@@ -13,7 +13,7 @@ declare namespace JsDiff {
 
     interface IBestPath {
         newPos: number;
-        componenets: IDiffResult[];
+        components: IDiffResult[];
     }
 
     interface IHunk {
