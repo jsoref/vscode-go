@@ -754,7 +754,7 @@ class GoDebugSession extends LoggingDebugSession {
 		log('InitializeResponse');
 	}
 
-	protected findPathSeperator(filePath: string) {
+	protected findPathSeparator(filePath: string) {
 		if (/^(\w:[\\/]|\\\\)/.test(filePath)) {
 			return '\\';
 		}
@@ -1392,8 +1392,8 @@ class GoDebugSession extends LoggingDebugSession {
 		}
 
 		if (args.remotePath.length > 0) {
-			this.localPathSeparator = this.findPathSeperator(localPath);
-			this.remotePathSeparator = this.findPathSeperator(args.remotePath);
+			this.localPathSeparator = this.findPathSeparator(localPath);
+			this.remotePathSeparator = this.findPathSeparator(args.remotePath);
 
 			const llist = localPath.split(/\/|\\/).reverse();
 			const rlist = args.remotePath.split(/\/|\\/).reverse();

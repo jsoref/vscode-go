@@ -230,7 +230,7 @@ declare module _ {
     interface LoDashExplicitObjectWrapper<T> extends LoDashExplicitWrapperBase<T, LoDashExplicitObjectWrapper<T>> { }
 
     interface LoDashImplicitArrayWrapper<T> extends LoDashImplicitWrapperBase<T[], LoDashImplicitArrayWrapper<T>> {
-        join(seperator?: string): string;
+        join(separator?: string): string;
         pop(): T;
         push(...items: T[]): LoDashImplicitArrayWrapper<T>;
         shift(): T;
