@@ -402,7 +402,7 @@ It returns the number of bytes written and any write error encountered.
 			[
 				new vscode.Position(27, 14),
 				'type ABC struct {\n    a int\n    b int\n    c int\n}',
-				`ABC is a struct, you coudn't use Goto Definition or Hover info on this before\nNow you can due to gogetdoc and go doc\n`
+				`ABC is a struct, you couldn't use Goto Definition or Hover info on this before\nNow you can due to gogetdoc and go doc\n`
 			],
 			[
 				new vscode.Position(28, 6),

@@ -6,7 +6,7 @@ import (
 	"net"
 )
 
-// ABC is a struct, you coudn't use Goto Definition or Hover info on this before
+// ABC is a struct, you couldn't use Goto Definition or Hover info on this before
 // Now you can due to gogetdoc and go doc
 type ABC struct {
 	a int
