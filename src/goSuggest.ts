@@ -169,7 +169,7 @@ export class GoCompletionItemProvider implements vscode.CompletionItemProvider, 
 				if (commentCompletion) {
 					return resolve([commentCompletion]);
 				}
-				// prevent completion when typing in a line comment that doesnt start from the beginning of the line
+				// prevent completion when typing in a line comment that doesn't start from the beginning of the line
 				if (isPositionInComment(document, position)) {
 					return resolve([]);
 				}
@@ -515,7 +515,7 @@ export class GoCompletionItemProvider implements vscode.CompletionItemProvider, 
 					) {
 						vscode.window
 							.showInformationMessage(
-								'The go.gocodePackageLookupMode setting for gb will not be honored as github.com/mdempskey/gocode doesnt support it yet.',
+								`The go.gocodePackageLookupMode setting for gb will not be honored as github.com/mdempskey/gocode doesn't support it yet.`,
 								`Don't show again`
 							)
 							.then((selected) => {

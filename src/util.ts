@@ -647,7 +647,7 @@ export interface ICheckResult {
  * @param severity error or warning
  * @param useStdErr If true, the stderr of the output of the given tool will be used, else stdout will be used
  * @param toolName The name of the Go tool to run. If none is provided, the go runtime itself is used
- * @param printUnexpectedOutput If true, then output that doesnt match expected format is printed to the output channel
+ * @param printUnexpectedOutput If true, then output that doesn't match expected format is printed to the output channel
  */
 export function runTool(
 	args: string[],

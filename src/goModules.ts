@@ -85,7 +85,7 @@ export async function getModFolderPath(fileuri: vscode.Uri): Promise<string> {
 
 		if (promptFormatTool) {
 			const promptMsgForFormatTool =
-				'`goreturns` doesnt support auto-importing missing imports when using Go modules yet. Please update the "formatTool" setting to `goimports`.';
+				'`goreturns` doesn\'t support auto-importing missing imports when using Go modules yet. Please update the "formatTool" setting to `goimports`.';
 			await promptToUpdateToolForModules('switchFormatToolToGoimports', promptMsgForFormatTool, goConfig);
 		}
 	}
